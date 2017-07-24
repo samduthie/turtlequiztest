@@ -22,11 +22,11 @@
             </h3>
         </div>
 		<!-- Hook on the controller for this view and specify when to show it using ng-hide -->
-        <div ng-controller="listCtrl as list" ng-hide="list.quizActive">
+        <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive">
         	<!-- top search bar with start quiz button using bootstrap -->
             <form class="form-inline well well-sm clearfix">
                 <span class="glyphicon glyphicon-search"></span>
-                <input 
+                <input  
                     type="text" 
                     placeholder="Search..." 
                     class="form-control"
@@ -105,7 +105,9 @@
                 </div>
             </div>
         </div><!-- List Controller -->
-
+        <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
+        test
+        </div>
 
 
     </div>
@@ -118,6 +120,8 @@
     <!-- Our application scripts -->
     <script src="js/app.js"></script>
     <script src="js/controllers/list.js"></script>
+    <script src="js/controllers/quiz.js"></script>
+    <script src="js/factories/quizMetrics.js"></script>
 
 </body>
 </html>
