@@ -8,6 +8,7 @@
             var dataObj = {
                turtlesData: turtlesData,
                quizQuestions: quizQuestions,
+               correctAnswers: correctAnswers,
             };
             
         return dataObj;
@@ -16,24 +17,24 @@
         
         
         
-        
+var correctAnswers = [0,3,1,1,2];
         
 var quizQuestions  = [
         {
             type: "text",
-            text: "How much can a loggerhead weigh?",
+            text: "How do you calm down the nicole turtle?",
             possibilities: [
                 {
-                    answer: "Up to 20kg"
+                    answer: "Give it a hug"
                 },
                 {
-                    answer: "Up to 115kg"
+                    answer: "Feed it chocolate"
                 },
                 {
-                    answer: "Up to 220kg"
+                    answer: "It will never calm down"
                 },
                 {
-                    answer: "Up to 500kg"
+                    answer: "Act weird around it"
                 }
             ],
             selected: null,
@@ -41,19 +42,59 @@ var quizQuestions  = [
         },
         {
             type: "text",
-            text: "What is the typical lifespan of a Green Sea Turtle?",
+            text: "What food does the Nicole turtle like best?",
             possibilities: [
                 {
-                    answer: "150 years"
+                    answer: "algae"
                 },
                 {
-                    answer: "10 years"
+                    answer: "small fish"
                 },
                 {
-                    answer: "80 years"
+                    answer: "brocolli and chicken"
                 },
                 {
-                    answer: "40 years"
+                    answer: "crisps"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "What does the nicole turtle do when confronted with danger",
+            possibilities: [
+                {
+                    answer: "hide in the sand"
+                },
+                {
+                    answer: "act weird"
+                },
+                {
+                    answer: "runs away"
+                },
+                {
+                    answer: "fights back"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "What tv program does the Nicole turtle like the most?",
+            possibilities: [
+                {
+                    answer: "the simpsons"
+                },
+                {
+                    answer: "turtles dont watch tv"
+                },
+                {
+                    answer: "game of thrones"
+                },
+                {
+                    answer: "prison break"
                 }
             ],
             selected: null,
@@ -61,164 +102,27 @@ var quizQuestions  = [
         },
         {
             type: "image",
-            text: "Which of these is the Alligator Snapping Turtle?",
+            text: "Which one of these is the nicole turtle?",
             possibilities: [
                 {
-                    answer: "https://c1.staticflickr.com/3/2182/2399413165_bcc8031cac_z.jpg?zz=1"
+                    answer: "https://s-media-cache-ak0.pinimg.com/736x/2e/56/7b/2e567b158a8b29a9956c698a961d55ca--loggerhead-turtle-green-turtle.jpg"
                 },
                 {
-                    answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"
+                    answer: "https://pbs.twimg.com/media/CZg7rHgWYAE_YSS.jpg"
                 },
                 {
-                    answer: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-turtle-007.jpg"
+                    answer: "https://adoptapond.files.wordpress.com/2014/01/blandings-turtle-nicole-richards.jpg"
                 },
                 {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
+                    answer: "https://us.123rf.com/450wm/memoangeles/memoangeles1411/memoangeles141100012/33526267-cartoon-turtle-vector-clip-art-illustration-with-simple-gradients-all-in-a-single-layer.jpg"
                 }
             ],
             selected: null,
             correct: null
         },
-        {
-            type: "image",
-            text: "Which of these is the Green Turtle?",
-            possibilities: [
-                {
-                    answer: "http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
-                },
-                {
-                    answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "Where does the Kemp's Ridley Sea Turtle live?'",
-            possibilities: [
-                {
-                    answer: "Tropical waters all around the world"
-                },
-                {
-                    answer: "Eastern Australia"
-                },
-                {
-                    answer: "Coastal North Atlantic"
-                },
-                {
-                    answer: "South pacific islands"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "What is the most common turtle in US waters?",
-            possibilities: [
-                {
-                    answer: "Loggerhead turtle"
-                },
-                {
-                    answer: "Leatherback turtle"
-                },
-                {
-                    answer: "Hawksbill Turtle"
-                },
-                {
-                    answer: "Alligator Snapping Turtle"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "What is the largest sea turtle on earth?",
-            possibilities: [
-                {
-                    answer: "Eastern Snake Necked Turtle"
-                },
-                {
-                    answer: "Olive Ridley Sea Turtle"
-                },
-                {
-                    answer: "Kemp's Ridley Sea Turtle'"
-                },
-                {
-                    answer: "Leatherback"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "image",
-            text: "Which of these is the Olive Ridley Turtle?",
-            possibilities: [
-                {
-                    answer: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg"
-                },
-                {
-                    answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
-                },
-                {
-                    answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "How Heavy can a leatherback turtle be?",
-            possibilities: [
-                {
-                    answer: "900kg"
-                },
-                {
-                    answer: "40kg"
-                },
-                {
-                    answer: "110kg"
-                },
-                {
-                    answer: "300kg"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "Which of these turtles are herbivores?",
-            possibilities: [
-                {
-                    answer: "Loggerhead Turtle"
-                },
-                {
-                    answer: "Hawksbill Turtle"
-                },
-                {
-                    answer: "Leatherback Turtle"
-                },
-                {
-                    answer: "Green Turtle"
-                }
-            ],
-            selected: null,
-            correct: null
-        }
+ 
+ 
+ 
     ];
 
     var turtlesData = [
@@ -239,6 +143,15 @@ var quizQuestions  = [
             lifespan: "More than 50 years",
             diet: "Carnivore",
             description: "Loggerhead turtles are the most abundant of all the marine turtle species in U.S. waters. But persistent population declines due to pollution, shrimp trawling, and development in their nesting areas, among other factors, have kept this wide-ranging seagoer on the threatened species list since 1978. Their enormous range encompasses all but the most frigid waters of the world's oceans. They seem to prefer coastal habitats, but often frequent inland water bodies and will travel hundreds of miles out to sea."
+        },
+     {
+            type: "Nicole Turtle",
+            image_url: "https://adoptapond.files.wordpress.com/2014/01/blandings-turtle-nicole-richards.jpg",
+            locations: "Mostly in libraries",
+            size: "1.68mtrs",
+            lifespan: "Too long!",
+            diet: "crisps and coke",
+            description: "There is only one known Nicole turtle. One day it hopes to be called Dr. turtle."
         },
         {
             type: "Leatherback Turtle",

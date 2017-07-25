@@ -76,7 +76,7 @@
             vm.finalise = false;
             numQuestionsAnswered = 0;
             vm.activeQuestion = 0;
-            quizMetrics.markSquiz();
+            quizMetrics.markQuiz();
             quizMetrics.changeState("quiz", false);
             quizMetrics.changeState("results", true);
         }
